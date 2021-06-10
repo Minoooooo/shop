@@ -29,4 +29,7 @@ public class User {
     @OneToMany(mappedBy = "user")
     private List<Scrap> scraps = new ArrayList<>();
 
+    @OneToMany(mappedBy = "user")
+    private List<Review> reviews = new ArrayList<>();
+
 }
